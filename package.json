@@ -1,0 +1,16 @@
+{
+  "name": "EricChiu920",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/EricChiu920/EricChiu920.github.io.git",
+  "author": "Eric Chiu <EricChiu920@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "gulp watch"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  }
+}

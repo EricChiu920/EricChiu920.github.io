@@ -6,11 +6,13 @@
 -->
 <html>
 	<head>
-		<title>Landed by HTML5 UP</title>
+		<title>Eric Chiu's Portfolio</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+		<script src="https://kit.fontawesome.com/08887e97bb.js"></script>
 	</head>
 	<body class="is-preload landing">
 		<div id="page-wrapper">
@@ -19,7 +21,7 @@
 				<header id="header">
 					<h1 id="logo"><a href="index.html">Landed</a></h1>
 					<nav id="nav">
-						<ul>
+						<!-- <ul>
 							<li><a href="index.html">Home</a></li>
 							<li>
 								<a href="#">Layouts</a>
@@ -40,7 +42,7 @@
 							</li>
 							<li><a href="elements.html">Elements</a></li>
 							<li><a href="#" class="button primary">Sign Up</a></li>
-						</ul>
+						</ul> -->
 					</nav>
 				</header>
 
@@ -48,17 +50,19 @@
 				<section id="banner">
 					<div class="content">
 						<header>
-							<h2>The future has landed</h2>
-							<p>And there are no hoverboards or flying cars.<br />
-							Just apps. Lots of mother flipping apps.</p>
+							<h2>Hi, I'm Eric Chiu</h2>
+							<p>I'm a software engineer with a passion for web development.<br />
+							I'm a curious, hardworking developer, who is constantly looking to refine my skills.<br />
+							</p>
+							<!-- Just apps. Lots of mother flipping apps.</p> -->
 						</header>
-						<span class="image"><img src="images/pic01.jpg" alt="" /></span>
+						<span class="image"><img src="./images/profile-picture.jpg" alt="" /></span>
 					</div>
-					<a href="#one" class="goto-next scrolly">Next</a>
+					<a href="#dissonance" class="goto-next scrolly">Next</a>
 				</section>
 
 			<!-- One -->
-				<section id="one" class="spotlight style1 bottom">
+				<!-- <section id="one" class="spotlight style1 bottom">
 					<span class="image fit main"><img src="images/pic02.jpg" alt="" /></span>
 					<div class="content">
 						<div class="container">
@@ -87,84 +91,117 @@
 						</div>
 					</div>
 					<a href="#two" class="goto-next scrolly">Next</a>
-				</section>
+				</section> -->
 
 			<!-- Two -->
-				<section id="two" class="spotlight style2 right">
-					<span class="image fit main"><img src="images/pic03.jpg" alt="" /></span>
+				<section id="dissonance" class="spotlight style2 right">
+					<span class="image fit main"><img src="images/dissonance-splash.png" alt="" /></span>
 					<div class="content">
 						<header>
-							<h2>Interdum amet non magna accumsan</h2>
-							<p>Nunc commodo accumsan eget id nisi eu col volutpat magna</p>
+							<h2>Dissonance</h2>
+							<p>A single-page app clone of Discord where users are able to communicate using live chat</p>
 						</header>
-						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+						<ul>
+							<li>Incorporated Rails’ action cables and Redis websockets to allow users to receive messages in real-time.</li>
+							<li>Built multiple modals that are shown depending on the redux state for seamless user experience</li>
+							<li>Integrated a growing text field making use of React’s synthetic events that allows a user to keep their message in frame
+							regardless of the length of the message.</li>
+						</ul>
 						<ul class="actions">
-							<li><a href="#" class="button">Learn More</a></li>
+							<li><a target="_blank" rel="noopener noreferrer" href="https://dissonance-app.herokuapp.com" class="button primary">Live Link</a></li>
+							<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/EricChiu920/dissonance" class="button">Github Repo</a></li>
 						</ul>
 					</div>
-					<a href="#three" class="goto-next scrolly">Next</a>
+					<a href="#puyo-drop" class="goto-next scrolly">Next</a>
 				</section>
 
 			<!-- Three -->
-				<section id="three" class="spotlight style3 left">
-					<span class="image fit main bottom"><img src="images/pic04.jpg" alt="" /></span>
+				<section id="puyo-drop" class="spotlight style3 left">
+					<span class="image fit main bottom"><img src="images/puyo-drop.png" alt="puyo-drop gameplay" /></span>
 					<div class="content">
 						<header>
-							<h2>Interdum felis blandit praesent sed augue</h2>
-							<p>Accumsan integer ultricies aliquam vel massa sapien phasellus</p>
+							<h2>Puyo Drop</h2>
+							<p>A tile-matching game built using just JavaScript, HTML, and CSS</p>
 						</header>
-						<p>Feugiat accumsan lorem eu ac lorem amet ac arcu phasellus tortor enim mi mi nisi praesent adipiscing. Integer mi sed nascetur cep aliquet augue varius tempus lobortis porttitor lorem et accumsan consequat adipiscing lorem.</p>
+						<ul>
+							<li>Implemented a custom algorithm to quickly check for clears in a grid which improves efficiency while still tracking the
+							objects updated positions</li>
+							<li>Engineered custom logic to check when an object is able to be rotated to ensure that the objects are bounded by the
+							board.</li>
+							<li>Applied Object Oriented Programming to modularize the code and separate concerns of each class to allow additional
+							features to be easily added.</li>
+						</ul>
 						<ul class="actions">
-							<li><a href="#" class="button">Learn More</a></li>
+							<li><a target="_blank" rel="noopener noreferrer" href="https://ericchiu920.github.io/puyo-drop/" class="button primary">Live Link</a></li>
+							<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/EricChiu920/puyo-drop" class="button">Github Repo</a></li>
 						</ul>
 					</div>
-					<a href="#four" class="goto-next scrolly">Next</a>
+					<a href="#skills" class="goto-next scrolly">Next</a>
 				</section>
 
 			<!-- Four -->
-				<section id="four" class="wrapper style1 special fade-up">
+				<section id="skills" class="wrapper style1 special fade-up">
 					<div class="container">
 						<header class="major">
-							<h2>Accumsan sed tempus adipiscing blandit</h2>
-							<p>Iaculis ac volutpat vis non enim gravida nisi faucibus posuere arcu consequat</p>
+							<h2>Skills</h2>
+							<!-- <p>Iaculis ac volutpat vis non enim gravida nisi faucibus posuere arcu consequat</p> -->
 						</header>
 						<div class="box alt">
 							<div class="row gtr-uniform">
 								<section class="col-4 col-6-medium col-12-xsmall">
-									<span class="icon solid alt major fa-chart-area"></span>
-									<h3>Ipsum sed commodo</h3>
-									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+									<span class="icon solid alt major"><i class="devicon-react-original colored dev-icons"></i></span>
+									<h3>React</h3>
 								</section>
 								<section class="col-4 col-6-medium col-12-xsmall">
-									<span class="icon solid alt major fa-comment"></span>
-									<h3>Eleifend lorem ornare</h3>
-									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+									<span class="icon solid alt major"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" height="100%" width="100%">
+										<g fill="#764ABC">
+											<path
+												d="M65.6 65.4c2.9-.3 5.1-2.8 5-5.8-.1-3-2.6-5.4-5.6-5.4h-.2c-3.1.1-5.5 2.7-5.4 5.8.1 1.5.7 2.8 1.6 3.7-3.4 6.7-8.6 11.6-16.4 15.7-5.3 2.8-10.8 3.8-16.3 3.1-4.5-.6-8-2.6-10.2-5.9-3.2-4.9-3.5-10.2-.8-15.5 1.9-3.8 4.9-6.6 6.8-8-.4-1.3-1-3.5-1.3-5.1-14.5 10.5-13 24.7-8.6 31.4 3.3 5 10 8.1 17.4 8.1 2 0 4-.2 6-.7 12.8-2.5 22.5-10.1 28-21.4z" />
+											<path
+												d="M83.2 53c-7.6-8.9-18.8-13.8-31.6-13.8H50c-.9-1.8-2.8-3-4.9-3h-.2c-3.1.1-5.5 2.7-5.4 5.8.1 3 2.6 5.4 5.6 5.4h.2c2.2-.1 4.1-1.5 4.9-3.4H52c7.6 0 14.8 2.2 21.3 6.5 5 3.3 8.6 7.6 10.6 12.8 1.7 4.2 1.6 8.3-.2 11.8-2.8 5.3-7.5 8.2-13.7 8.2-4 0-7.8-1.2-9.8-2.1-1.1 1-3.1 2.6-4.5 3.6 4.3 2 8.7 3.1 12.9 3.1 9.6 0 16.7-5.3 19.4-10.6 2.9-5.8 2.7-15.8-4.8-24.3z" />
+											<path
+												d="M32.4 67.1c.1 3 2.6 5.4 5.6 5.4h.2c3.1-.1 5.5-2.7 5.4-5.8-.1-3-2.6-5.4-5.6-5.4h-.2c-.2 0-.5 0-.7.1-4.1-6.8-5.8-14.2-5.2-22.2.4-6 2.4-11.2 5.9-15.5 2.9-3.7 8.5-5.5 12.3-5.6 10.6-.2 15.1 13 15.4 18.3 1.3.3 3.5 1 5 1.5-1.2-16.2-11.2-24.6-20.8-24.6-9 0-17.3 6.5-20.6 16.1-4.6 12.8-1.6 25.1 4 34.8-.5.7-.8 1.8-.7 2.9z" />
+										</g>
+									</svg></span>
+									<h3>Redux</h3>
 								</section>
 								<section class="col-4 col-6-medium col-12-xsmall">
-									<span class="icon solid alt major fa-flask"></span>
-									<h3>Cubilia cep lobortis</h3>
-									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+									<span class="icon solid alt major no-background"><i class="devicon-javascript-plain colored dev-icons"></i></span>
+									<h3>JavaScript</h3>
 								</section>
 								<section class="col-4 col-6-medium col-12-xsmall">
-									<span class="icon solid alt major fa-paper-plane"></span>
-									<h3>Non semper interdum</h3>
-									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+									<span class="icon solid alt major"><i class="devicon-rails-plain colored dev-icons"></i></span>
+									<h3>Rails</h3>
 								</section>
 								<section class="col-4 col-6-medium col-12-xsmall">
-									<span class="icon solid alt major fa-file"></span>
-									<h3>Odio laoreet accumsan</h3>
-									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+									<span class="icon solid alt major"><i class="devicon-ruby-plain colored dev-icons"></i></span>
+									<h3>Ruby</h3>
 								</section>
 								<section class="col-4 col-6-medium col-12-xsmall">
-									<span class="icon solid alt major fa-lock"></span>
+									<span class="icon solid alt major"><i class="devicon-postgresql-plain colored dev-icons"></i></span>
+									<h3>PostgreSQL</h3>
+								</section>
+								<section class="col-4 col-6-medium col-12-xsmall">
+									<span class="icon solid alt major"><i class="devicon-jquery-plain colored dev-icons"></i></span>
+									<h3>jQuery</h3>
+								</section>
+								<section class="col-4 col-6-medium col-12-xsmall">
+									<span class="icon solid alt major"><i class="devicon-html5-plain-wordmark colored dev-icons"></i></span>
+									<h3>HTML5</h3>
+								</section>
+								<section class="col-4 col-6-medium col-12-xsmall">
+									<span class="icon solid alt major"><i class="devicon-css3-plain-wordmark colored dev-icons"></i></span>
 									<h3>Massa arcu accumsan</h3>
-									<p>Feugiat accumsan lorem eu ac lorem amet accumsan donec. Blandit orci porttitor.</p>
+								</section>
+								<section class="col-4 col-6-medium col-12-xsmall">
+									<span class="icon solid alt major"><i class="devicon-git-plain colored dev-icons"></i></span>
+									<h3>Git</h3>
 								</section>
 							</div>
 						</div>
 						<footer class="major">
 							<ul class="actions special">
-								<li><a href="#" class="button">Magna sed feugiat</a></li>
+								<li><a target="_blank" rel="noopener noreferrer" href="images/Resume - Eric Chiu.pdf" class="button">Resume</a></li>
 							</ul>
 						</footer>
 					</div>
@@ -189,15 +226,16 @@
 			<!-- Footer -->
 				<footer id="footer">
 					<ul class="icons">
-						<li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li>
-						<li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li>
-						<li><a href="#" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
-						<li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li>
-						<li><a href="#" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
-						<li><a href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
+						<!-- <li><a href="#" class="icon brands alt fa-twitter"><span class="label">Twitter</span></a></li> -->
+						<!-- <li><a href="#" class="icon brands alt fa-facebook-f"><span class="label">Facebook</span></a></li> -->
+						<!-- <li><a href="#" class="icon brands alt fa-instagram"><span class="label">Instagram</span></a></li> -->
+						<li><a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/eric-chiu-920/" class="icon brands alt fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+						<li><a target="_blank" rel="noopener noreferrer" href="https://angel.co/eric-chiu-6" class="icon brands alt fa-angellist"><span class="label">AngelList</span></a></li>
+						<li><a target="_blank" rel="noopener noreferrer" href="https://github.com/EricChiu920" class="icon brands alt fa-github"><span class="label">GitHub</span></a></li>
+						<li><a target="_blank" rel="noopener noreferrer" href="#" class="icon solid alt fa-envelope"><span class="label">Email</span></a></li>
 					</ul>
 					<ul class="copyright">
-						<li>&copy; Untitled. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+						<li>&copy; All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
 					</ul>
 				</footer>
 
